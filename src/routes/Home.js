@@ -24,7 +24,7 @@ const Home = ({userObj}) => {
         event.preventDefault();
         try {
             const docRef = await addDoc(collection(dbService, "nweets"), {
-                nweet,
+                text: nweet,
                 createdAt: Date.now(),
                 creatorId: userObj.uid,
             });
