@@ -33,7 +33,7 @@ const Nweet = ({nweetObj, isOwner}) => {
                     <form onSubmit={onSubmit}>
                         <input
                             type="text"
-                            placeholder="Edit your nweet"
+                            placeholder="트윗을 입력해 주세요"
                             value={newNweet}
                             required
                             onChange={onChange}
